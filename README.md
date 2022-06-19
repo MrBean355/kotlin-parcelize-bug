@@ -1,4 +1,6 @@
 # Kotlin Parcelize Bug
+**NOTE: This was fixed at some point in the Kotlin Android Extensions plugin.**
+
 A runtime exception is thrown when parcelizing a class that has a property of type `Array<T>?` (where `T` is any type except `String`) and the value of the property
 is `null`.
 
